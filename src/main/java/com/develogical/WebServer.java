@@ -20,7 +20,7 @@ public class WebServer {
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             try {
-
+                 int i=1;
                 String query = req.getParameter("q");
                 if (query == null) {
                     new IndexPage().writeTo(resp);
