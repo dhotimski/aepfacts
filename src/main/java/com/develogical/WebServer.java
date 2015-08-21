@@ -56,6 +56,7 @@ public class WebServer {
         Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
+        int i=1;
         server.setHandler(context);
         context.addServlet(new ServletHolder(new Api()), "/api/*");
         context.addServlet(new ServletHolder(new Website()), "/*");
