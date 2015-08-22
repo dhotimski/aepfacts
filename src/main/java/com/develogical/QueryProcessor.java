@@ -4,9 +4,9 @@ public class QueryProcessor {
 
     public String process(String query) {
         if (query.contains("hi")) {
-            return "hello";
+            return "hello33333333";
         }
-        return "";
+        return "ttttttttttt";
     }
 
 }
